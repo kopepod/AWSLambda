@@ -15,7 +15,7 @@ This tutorial shows how to create a API with python backbone, steps:
 7. Leave the rest and click on create Function
 
 8. Edit _lambda_function.py_ as
-```
+```python
 # lambda_function.py
 import json
 def lambda_handler(event, context):
@@ -44,7 +44,7 @@ def lambda_handler(event, context):
 
 ## Curl
 Generate the following bash script and save it, e.g., mybash.sh
-```
+```bash
 curl -X POST \
   'https://{APIgate}.execute-api.{zone}.amazonaws.com/{myfunction}' \
   -H 'content-type: application/json' \
@@ -52,7 +52,7 @@ curl -X POST \
   -d '{"time":"sunrise"}' 
 ```
 Run your bash
-```
+```bash
 bash mybash.sh
 ```
 
